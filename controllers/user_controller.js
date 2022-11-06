@@ -1,6 +1,6 @@
 const User=require("../models/user");
 const jwt = require('jsonwebtoken');
-
+//for user signup
 module.exports.signup=async function(req,res){
     try{
      let user= await User.findOne({Email:req.body.Email});
@@ -28,7 +28,7 @@ module.exports.signup=async function(req,res){
     }
 }
 
-
+//for user sigin and Token generation
 module.exports.signin=async function(req,res){
     try{
         let user= await User.findOne({Email:req.body.Email});
