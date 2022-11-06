@@ -6,7 +6,6 @@ POST-/Signin
    password: Delet@2022
    Send AccessToken sporse which is valid for up to 30 min
  
- 
  All following APIs must be authorized with access Token
       POST /create todo Create do with "tle and date (optional)
 
